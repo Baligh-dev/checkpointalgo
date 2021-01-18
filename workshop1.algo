@@ -1,0 +1,48 @@
+ALGORITHM number of characters
+VAR
+    s:STRING:="bla bla bla.";
+    i:INTEGER:=0;
+    sum:INTEGER:=0;
+BEGIN
+WHILE (s[i] != ".") DO
+   sum:=sum+1
+   i:=i+1
+END_WHILE
+    write(sum+1)
+END
+
+
+
+ALGORITHM number of words
+VAR
+    s:STRING:="bla bla bla.";
+    i:INTEGER:=0;
+    numberWord:INTEGER:=0;
+BEGIN
+    WHILE (s[i] != ".") DO
+        IF (s[i] := " ") THEN 
+         numberWord := numberWord +1   
+        END_IF
+        i:=i+1
+    END_WHILE
+        write(numberWord+1)
+
+END
+
+
+
+
+ALGORITHM number of vowels
+VAR
+    s:STRING:="bla bla bla.";
+    i:INTEGER:=0;
+    numberVowels:INTEGER:=0;
+BEGIN
+        WHILE (s[i] != ".") DO
+        IF (s[i] := "a" OR "e" OR "i" OR "o" OR "u" OR "y") THEN 
+         numberVowels := numberVowels +1   
+        END_IF
+        i:=i+1
+    END_WHILE
+        write(numberVowels)
+END
